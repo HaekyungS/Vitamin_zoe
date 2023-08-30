@@ -1,11 +1,13 @@
+import styles from "../../styles/page.module.css";
+
 export default function Page() {
   return (
     <>
-      <div>
-        <div>하양</div>
-        <div>파랑</div>
+      <div className={styles.topBox}>
+        <div className={styles.whiteSmallCap}></div>
+        <div className={styles.blueSmallCap}></div>
       </div>
-      <div></div>
+      <div className={styles.bottom}></div>
     </>
   );
 }
