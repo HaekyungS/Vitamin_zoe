@@ -7,7 +7,12 @@ export default function Page() {
         <div className={styles.whiteSmallCap}></div>
         <div className={styles.blueSmallCap}></div>
       </div>
-      <div className={styles.bottom}></div>
+      <div className={styles.bottom}>
+        <div>
+          <a href="http://127.0.0.1:3000/info">약품 신상</a>
+          <a href="http://127.0.0.1:3000/project">투약 프로젝트</a>
+        </div>
+      </div>
     </>
   );
 }
