@@ -1,13 +1,19 @@
+import Link from "next/link";
 import styles from "../../styles/page.module.css";
 
 export default function Page() {
   return (
     <>
-      <a className={styles.topBox} href="http://127.0.0.1:3000/main">
-        <div className={styles.whiteSmallCap}></div>
-        <div className={styles.blueSmallCap}></div>
-      </a>
-      <div className={styles.bottom}>프로젝트</div>
+      <div className={`${styles.topBox} ${styles.flexRowCenter}`}>
+        <div
+          className={styles.whiteSmallCap}
+          onClick={() => {
+            history.go(-1);
+          }}
+        ></div>
+        <Link className={styles.blueSmallCap} href="/"></Link>
+      </div>
+      <div className={`${styles.bottom} ${styles.flexRowCenter}`}>프로젝트</div>
     </>
   );
 }
