@@ -8,4 +8,11 @@ body {
   height: 100vh;
   background-color: #d2f7ff;
   /* opacity: 0.5; */
+  /* 파이어 폭스 */
+  scrollbar-width: none;
+}
+
+/* 크롬, 사파리, 엣지, 오페라  */
+body::-webkit-scrollbar {
+  display: none;
 }
