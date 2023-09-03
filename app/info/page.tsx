@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "../../styles/page.module.css";
 import Image from "next/image";
 import photo from "../../Utils/230910.jpg";
+import React from "react";
 
 export default function Page() {
   return (

@@ -1,5 +1,6 @@
 import "../../styles/global.css";
 import { gamja } from "../../styles/font.ts";
+import React from "react";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
