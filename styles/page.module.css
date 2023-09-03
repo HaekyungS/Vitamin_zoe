@@ -17,6 +17,12 @@
   align-items: center;
 }
 
+.flexRowSAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .link {
   text-decoration-line: none;
 }
@@ -65,7 +71,7 @@
 
 .bottom {
   width: 70%;
-  height: 80%;
+  height: auto;
   background-color: #fff;
 }
 
@@ -105,4 +111,50 @@
 .image {
   border-radius: 50%;
   object-fit: fill;
+}
+
+.infoTable {
+  width: 85%;
+  height: 30%;
+  text-align: center;
+}
+
+.infoTitle {
+  width: 30%;
+  height: 20%;
+}
+
+.infoRow {
+  width: 30%;
+  height: 80%;
+}
+
+.infoLang {
+  width: 85%;
+  height: 30%;
+  text-align: center;
+}
+
+.marginLeft {
+  margin-left: 20px;
+}
+
+.lang {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+}
+
+.langBox {
+  width: 100%;
+  height: 80%;
+}
+
+.langTitle {
+  width: 100%;
+  height: 20%;
+}
+
+.listTypeNone {
+  list-style-type: none;
 }
