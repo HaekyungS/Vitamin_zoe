@@ -3,6 +3,8 @@ import Link from "next/link";
 import styles from "../../styles/page.module.css";
 import Image from "next/image";
 import photo from "../../Utils/230910.jpg";
+import gmail from "../../Utils/gmail.png";
+import notion from "../../Utils/notion.png";
 import React from "react";
 
 export default function Page() {
@@ -237,8 +239,24 @@ export default function Page() {
         </div>
         {/* 컨택포인트 */}
         <div>
-          <h2>투약하고 싶으시다면!</h2>
-          <div></div>
+          <h2>좀 더 알고 싶다면!</h2>
+          <div>
+            <Link href="https://github.com/HaekyungS">
+              <Image
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt="Github"
+                width={50}
+                height={50}
+              />
+            </Link>
+            <Link href="https://foul-rice-892.notion.site/Project-69425c2d126f4af28d8763c1b5a5d085?pvs=4">
+              <Image src={notion} alt="Notion" width={50} height={50} />
+            </Link>
+            <div>
+              <Image src={gmail} alt="Notion" width={15} height={15} />
+              haekyungs95@gmail.com
+            </div>
+          </div>
         </div>
       </div>
     </>
