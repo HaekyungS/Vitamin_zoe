@@ -158,3 +158,42 @@
 .listTypeNone {
   list-style-type: none;
 }
+
+.projectTap {
+  width: 85%;
+  height: 80px;
+  font-size: 25px;
+}
+
+.projectBox {
+  width: 85%;
+  height: auto;
+  font-size: 18px;
+}
+
+.projectInfoBox {
+  width: 85%;
+  height: 30%;
+}
+
+.projectInfo {
+  width: 60%;
+  height: 100%;
+  margin: 0;
+}
+
+.projectName {
+  width: 100%;
+  height: 20%;
+  text-align: right;
+}
+
+.projectDetail {
+  width: 100%;
+  height: 80%;
+}
+
+.projectPlay {
+  width: 85%;
+  height: 30%;
+}
