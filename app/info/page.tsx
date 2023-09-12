@@ -88,12 +88,14 @@ export default function Page() {
         {/* 특징부분 */}
         {/* 특징적 이미지들을 찾아서 옆에 넣고 양쪽 교차 방식으로. */}
         <div className={`${styles.infoSpec} ${styles.marginTwo}`}>
-          <h2>약품 특이사항</h2>
+          <h2>약품 특이사항😶‍🌫️</h2>
           <ul>
             <li className={`${styles.textLeft}`}>
               <span>카멜레온을 뺨치는 빠른 적응력</span>
               <br />
-              일에 대한 업무 파악은 물론이고 장소, 사람에 대해서도 적응이 빠릅니다.
+              일에 대한 업무 파악은 물론이고
+              <br />
+              장소, 사람에 대해서도 적응이 빠릅니다.
               <br />
               그로인해 잠깐 알았는데도 장기간 알고 지낸 느낌이 듭니다.
             </li>
@@ -117,8 +119,8 @@ export default function Page() {
         </div>
 
         {/* 부작용 부분 */}
-        <div className={`${styles.marginTwo}`}>
-          <h2>부작용</h2>
+        <div className={`${styles.infoErr} ${styles.marginTwo}`}>
+          <h2>부작용🤫</h2>
           <p>
             다음과 같은 부작용이 있을 수 있습니다.
             <br />
@@ -128,23 +130,37 @@ export default function Page() {
             <li className={styles.textLeft}>
               <span>"든 자리는 몰라도 난 자리는 안다"</span> 를 체감 가능하십니다.
               <br />
-              고작 사람 하나 없는데 허전하고 조용하여 심심함을 느낄 수 있습니다.
+              고작 사람 하나 없는데
+              <br />
+              허전하고 조용하여 심심함을 느낄 수 있습니다.
             </li>
             <li className={styles.textRight}>
               특이사항처럼 장기간 알고 지낸 느낌때문에 자꾸 생각납니다.
               <br />
-              본 부작용은, 전직장 팀장님 등 동료분들, 여행 중 알게된 동행자, 친구 등 다양한 사례로
-              증명된 부작용입니다.
+              본 부작용은,
               <br />
-              잠깐 같이 있었는데도 친근하고 오랜 기간 알고지낸 느낌 뿐 아니라 자꾸 생각난다 합니다.
+              전직장 팀장님 등 동료분들, 여행 중 알게된 동행자, 친구 등
+              <br />
+              다양한 사례로 증명된 부작용입니다.
+              <br />
+              잠깐 같이 있었는데도 친근하고
+              <br />
+              오랜 기간 알고지낸 느낌 뿐 아니라 자꾸 생각난다 합니다.
             </li>
           </ol>
         </div>
 
+        <div>
+          <h3>투약 프로젝트가 궁금하다면👩‍🔬</h3>
+          <Link href={"/project"} className={styles.link}>
+            투약 결과 보러가기
+          </Link>
+        </div>
+
         {/* 컨택포인트 */}
         <div className={`${styles.infoContact}`}>
-          <h2>이 약품에 대해 더 알고싶다면</h2>
-          <div>
+          <h2>이 약품에 대해 더 알고싶다면🧐</h2>
+          <div className={styles.infoMore}>
             <Link href="https://github.com/HaekyungS" target="_blank">
               <Image
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
