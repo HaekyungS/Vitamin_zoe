@@ -104,6 +104,10 @@
   font-size: 25px;
 }
 
+.toggleButton:hover {
+  cursor: pointer;
+}
+
 .title {
   margin-left: 10px;
   font-size: 20px;
@@ -149,6 +153,7 @@
 .langBox {
   width: 100%;
   height: 80%;
+  flex-wrap: wrap;
 }
 
 .langTitle {
