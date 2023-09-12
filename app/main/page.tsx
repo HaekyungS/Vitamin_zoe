@@ -3,7 +3,8 @@ import { useState } from "react";
 import styles from "../../styles/page.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import photo from "../../Utils/230910.jpg";
+import photo from "../../Utils/230912.jpg";
+import { MiniCapsule } from "../component/MiniCapsule";
 
 export default function Page() {
   const [open, Setopen] = useState(false);
@@ -11,15 +12,7 @@ export default function Page() {
   return (
     <div className={styles.div100flex}>
       {/* 상단에 작은 캡슐모양 */}
-      <div className={`${styles.topBox} ${styles.flexRowCenter}`}>
-        <div
-          className={styles.whiteSmallCap}
-          onClick={() => {
-            history.go(-1);
-          }}
-        />
-        <Link className={styles.blueSmallCap} href="/" />
-      </div>
+      <MiniCapsule />
 
       {/* 본문내용 부분 */}
       <div className={styles.wh80}>

@@ -6,6 +6,7 @@ import { PokeXDigi } from "../component/PokeXDigi";
 import { useEffect, useState } from "react";
 import { JamStock } from "../component/Jamstock";
 import { Mucbo } from "../component/Mucbo";
+import { MiniCapsule } from "../component/MiniCapsule";
 
 export default function Page() {
   const [project, setProject] = useState("PokeXDigi");
@@ -24,15 +25,10 @@ export default function Page() {
 
   return (
     <>
-      <div className={`${styles.topBox} ${styles.flexRowCenter}`}>
-        <div
-          className={styles.whiteSmallCap}
-          onClick={() => {
-            history.go(-1);
-          }}
-        ></div>
-        <Link className={styles.blueSmallCap} href="/"></Link>
-      </div>
+      {/* 상단 작은캡슐부분 */}
+      <MiniCapsule />
+
+      {/* 프로젝트 카테고리 */}
       <div className={`${styles.bottomProject} ${styles.flexColumnCenter}`}>
         <div className={`${styles.flexRowSAround} ${styles.projectTap}`}>
           <div
@@ -57,6 +53,7 @@ export default function Page() {
             먹보의 하루
           </div>
         </div>
+        {/* 프로젝트 내용부분 */}
         {projectName()}
       </div>
     </>

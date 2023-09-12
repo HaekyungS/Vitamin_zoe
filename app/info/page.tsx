@@ -2,26 +2,19 @@
 import Link from "next/link";
 import styles from "../../styles/page.module.css";
 import Image from "next/image";
-import photo from "../../Utils/230910.jpg";
+import photo from "../../Utils/230914.jpg";
 import gmail from "../../Utils/gmail.png";
 import notion from "../../Utils/notion.png";
 import React from "react";
 import { LangIcon } from "../component/LangIcon";
 import { Tools } from "../component/Tools";
+import { MiniCapsule } from "../component/MiniCapsule";
 
 export default function Page() {
   return (
     <>
       {/* 상단에 작은 캡슐모양 */}
-      <div className={`${styles.topBox} ${styles.flexRowCenter}`}>
-        <div
-          className={styles.whiteSmallCap}
-          onClick={() => {
-            history.go(-1);
-          }}
-        />
-        <Link className={styles.blueSmallCap} href="/" />
-      </div>
+      <MiniCapsule />
 
       {/* 신상정보 */}
       <div className={`${styles.bottomInfo} ${styles.flexColumnCenter}`}>

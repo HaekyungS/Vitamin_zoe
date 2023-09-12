@@ -8,11 +8,6 @@
   align-items: center;
 }
 
-.containerFull {
-  width: 100%;
-  height: 100%;
-}
-
 .flexColumnCenter {
   display: flex;
   flex-direction: column;
@@ -70,21 +65,33 @@
 }
 
 /* 알약캡슐 */
+.containerFull {
+  width: 927px;
+  height: 945px;
+  position: relative;
+}
+
 .blueCap {
   width: 347.188px;
   height: 378px;
   border-radius: 50% 50% 0% 0%;
-  transform: rotate(30deg);
   background-color: #3d9df6;
-  margin-left: 420px;
+  margin-left: 45%;
+  position: absolute;
+  transform-origin: center top;
+  transform: rotate(30deg); /* 왼쪽으로 이동하고 회전 */
+  top: 10%;
 }
 
 .whiteCap {
   width: 347.188px;
   height: 378px;
   border-radius: 0% 0% 50% 50%;
-  transform: rotate(30deg);
   background-color: #fff;
+  position: absolute;
+  transform-origin: center bottom; /* 회전 중심 설정 */
+  transform: translateX(-50%) rotate(30deg); /* 왼쪽으로 이동하고 회전 */
+  bottom: 17%;
 }
 
 .blueSmallCap {
