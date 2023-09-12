@@ -48,7 +48,7 @@ export default function Page() {
             }
           }}
         >
-          약품정보 상세보기 ▼
+          약품정보 상세보기 {!open ? "😌" : "😝"}
           {open && (
             <div className={`${styles.toggle} ${styles.flexRowCenter}`}>
               <Link className={styles.link} href="/info">
