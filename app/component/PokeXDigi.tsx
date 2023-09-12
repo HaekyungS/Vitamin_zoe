@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../../../styles/page.module.css";
-import pokeXdigi from "../../../Utils/pokeXdigi.png";
-import pokeXdigi_env from "../../../Utils/pokeXdigi_dev_env.png";
+import styles from "../../styles/page.module.css";
+import pokeXdigi from "../../Utils/pokeXdigi.png";
+import pokeXdigi_env from "../../Utils/pokeXdigi_dev_env.png";
 import ReactPlayer from "react-player";
 import Link from "next/link";
 

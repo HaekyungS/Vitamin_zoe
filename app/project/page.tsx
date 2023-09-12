@@ -2,10 +2,7 @@
 
 import Link from "next/link";
 import styles from "../../styles/page.module.css";
-// import Image from "next/image";
-// import pokeXdigi from "../../Utils/pokeXdigi.png";
-// import pokeXdigi_env from "../../Utils/pokeXdigi_dev_env.png";
-import { PokeXDigi } from "./component/PokeXDigi";
+import { PokeXDigi } from "../component/PokeXDigi";
 import { useEffect, useState } from "react";
 
 export default function Page() {
