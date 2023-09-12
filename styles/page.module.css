@@ -27,6 +27,19 @@
   text-decoration-line: none;
 }
 
+.marginLeft {
+  margin-left: 20px;
+}
+
+.listTypeNone {
+  list-style-type: none;
+}
+
+.image {
+  border-radius: 50%;
+  object-fit: fill;
+}
+
 /* 알약캡슐 */
 .blueCap {
   width: 347.188px;
@@ -63,29 +76,20 @@
   margin: 0;
 }
 
-/* 특정 페이지들의 세부 CSS */
+/* 각 페이지 상단 알약 부분 */
 .topBox {
   width: 100%;
   height: 20%;
 }
 
-.bottom {
-  width: 70%;
-  height: auto;
-  background-color: #fff;
-}
+/* 특정 페이지들의 세부 CSS */
 
+/* 메인페이지 */
 .bottomMain {
   width: 70%;
   height: 40%;
   background-color: #fff;
   padding: 10px;
-}
-
-.toggle {
-  width: 100%;
-  height: 100%;
-  font-size: 25px;
 }
 
 .mainList {
@@ -95,6 +99,17 @@
 .mainsub {
   width: 85%;
   height: 65%;
+}
+
+.title {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.toggle {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
 }
 
 .toggleButton {
@@ -108,14 +123,13 @@
   cursor: pointer;
 }
 
-.title {
-  margin-left: 10px;
-  font-size: 20px;
-}
+/* 신상페이지 */
 
-.image {
-  border-radius: 50%;
-  object-fit: fill;
+.bottomInfo {
+  width: 70%;
+  height: auto;
+  background-color: #fff;
+  padding: 20px;
 }
 
 .infoTable {
@@ -140,9 +154,7 @@
   text-align: center;
 }
 
-.marginLeft {
-  margin-left: 20px;
-}
+/* 신상 내 언어부분 */
 
 .lang {
   width: 50%;
@@ -161,9 +173,7 @@
   height: 20%;
 }
 
-.listTypeNone {
-  list-style-type: none;
-}
+/* 프로젝트 부분 */
 
 .projectTap {
   width: 85%;
