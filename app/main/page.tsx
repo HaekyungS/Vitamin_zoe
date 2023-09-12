@@ -52,7 +52,7 @@ export default function Page() {
           {open && (
             <div className={`${styles.toggle} ${styles.flexRowCenter}`}>
               <Link className={styles.link} href="/info">
-                📒약품 신상📒
+                📒약품 상세📒
               </Link>
               <Link className={styles.link} href="/project">
                 💊투약 프로젝트💊

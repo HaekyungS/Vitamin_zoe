@@ -40,6 +40,26 @@
   object-fit: fill;
 }
 
+.textLeft {
+  text-align: left;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.margin15 {
+  margin: 15px;
+}
+
+.marginTwo {
+  margin: 20px;
+}
+
+.font18 {
+  font-size: 18px;
+}
+
 /* 알약캡슐 */
 .blueCap {
   width: 347.188px;
@@ -132,15 +152,43 @@
   padding: 20px;
 }
 
+/* 사진, 이름, 출시년월 */
 .infoTable {
   width: 85%;
-  height: 30%;
+  height: 25%;
   text-align: center;
+  margin: 20px;
 }
 
-.infoTitle {
-  width: 30%;
+.infoTableRow {
+  width: 80%;
+  height: 30%;
+  font-size: 19px;
+}
+
+.infoTableRowOne {
+  width: 33%;
   height: 20%;
+}
+
+.infoTableRowTwo {
+  width: 33%;
+  height: 80%;
+}
+
+.infoTableImg {
+  width: 70%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+/* 신상에 내 소개멘트 */
+
+.infoTitle {
+  width: 85%;
+  height: 20%;
+  margin: 20px;
+  font-size: 18px;
 }
 
 .infoRow {
@@ -151,7 +199,15 @@
 .infoLang {
   width: 85%;
   height: 30%;
+  margin: 20px;
   text-align: center;
+  padding: auto;
+}
+
+.infoLangTitle {
+  width: 100%;
+  height: 10%;
+  margin-bottom: 10px;
 }
 
 /* 신상 내 언어부분 */
@@ -171,6 +227,19 @@
 .langTitle {
   width: 100%;
   height: 20%;
+  margin: 5px;
+}
+
+/* 특징 부분 */
+.infoSpec {
+  width: 85%;
+  height: 40%;
+}
+
+.infoContact {
+  width: 85%;
+  height: 40%;
+  padding: 15px;
 }
 
 /* 프로젝트 부분 */

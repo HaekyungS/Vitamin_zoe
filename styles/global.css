@@ -3,6 +3,7 @@
   margin: 0 auto;
   text-align: center;
   word-break: break-all;
+  /* flex-wrap: wrap; */
 }
 
 body {
@@ -16,4 +17,17 @@ body {
 /* 크롬, 사파리, 엣지, 오페라  */
 body::-webkit-scrollbar {
   display: none;
+}
+
+span {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 15px;
+  font-size: 18px;
 }
