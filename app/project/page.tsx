@@ -4,6 +4,8 @@ import Link from "next/link";
 import styles from "../../styles/page.module.css";
 import { PokeXDigi } from "../component/PokeXDigi";
 import { useEffect, useState } from "react";
+import { JamStock } from "../component/Jamstock";
+import { Mucbo } from "../component/Mucbo";
 
 export default function Page() {
   const [project, setProject] = useState("PokeXDigi");
@@ -12,9 +14,9 @@ export default function Page() {
     if (project === "PokeXDigi") {
       return <PokeXDigi />;
     } else if (project === "JamStock") {
-      return <div>JamStock</div>;
+      return <JamStock />;
     } else if (project === "Mucbo") {
-      return <div>오리오랜만</div>;
+      return <Mucbo />;
     } else {
       return <div>뭔데 이건</div>;
     }
@@ -31,7 +33,7 @@ export default function Page() {
         ></div>
         <Link className={styles.blueSmallCap} href="/"></Link>
       </div>
-      <div className={`${styles.bottom} ${styles.flexColumnCenter}`}>
+      <div className={`${styles.bottomProject} ${styles.flexColumnCenter}`}>
         <div className={`${styles.flexRowSAround} ${styles.projectTap}`}>
           <div
             onClick={() => {
