@@ -29,8 +29,8 @@
 
 /* 알약캡슐 */
 .blueCap {
-  width: 40%;
-  height: 40%;
+  width: 347.188px;
+  height: 378px;
   border-radius: 50% 50% 0% 0%;
   transform: rotate(30deg);
   background-color: #3d9df6;
@@ -38,8 +38,8 @@
 }
 
 .whiteCap {
-  width: 40%;
-  height: 40%;
+  width: 347.188px;
+  height: 378px;
   border-radius: 0% 0% 50% 50%;
   transform: rotate(30deg);
   background-color: #fff;
@@ -79,6 +79,7 @@
   width: 70%;
   height: 40%;
   background-color: #fff;
+  padding: 10px;
 }
 
 .toggle {
