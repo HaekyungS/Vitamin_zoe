@@ -94,6 +94,12 @@ export const LangIcon = () => {
           height={50}
         />
         <Image
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+          alt="firebase"
+          width={50}
+          height={50}
+        />
+        <Image
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
           alt="GIT"
           width={50}
