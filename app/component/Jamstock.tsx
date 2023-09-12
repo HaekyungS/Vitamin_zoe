@@ -1,20 +1,19 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../../styles/page.module.css";
-import pokeXdigi from "../../Utils/pokeXdigi.png";
-import pokeXdigi_env from "../../Utils/pokeXdigi_dev_env.png";
+import jamstock from "../../Utils/jamstock.png";
 import ReactPlayer from "react-player";
 import Link from "next/link";
 
-export const PokeXDigi = () => {
+export const JamStock = () => {
   return (
     <div className={`${styles.projectBox} ${styles.flexColumnCenter}`}>
       {/* 프로젝트 소개 */}
       <div className={`${styles.flexRowCenter} ${styles.projectInfoBox}`}>
-        <Image src={pokeXdigi} alt="POKE X DIGI" width={200} height={200} />
+        <Image src={jamstock} alt="jamstock" width={200} height={200} />
         <div className={`${styles.projectInfo}`}>
-          <p className={`${styles.projectName}`}>POKE X DIGI</p>
-          <Link href="https://github.com/NewDevs2/pokeXdigi">
+          <p className={`${styles.projectName}`}>JamStock</p>
+          <Link href="https://github.com/JamStock/JamStock.git">
             <Image
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
               alt="Github"
@@ -23,10 +22,11 @@ export const PokeXDigi = () => {
             />
           </Link>
           <div className={`${styles.projectDetail}`}>
-            포켓몬과 디지몬을 좋아하는 90년대생 5명이 만든 멀티 커뮤니케이션 게임
+            실제 본인의 자산을 투자하기에 망설여지시는 분들을 위해
             <br />
-            특정한 목표 없이 자유롭게 지인 혹은 처음보는 사람들과 소통할 수 있는 공간을 제작하고자
-            시작하였습니다🤗
+            주식API를 이용하여 실제 장 상황을 체험하고,
+            <br />
+            보다 쉽고 재밌게 주식 투자 경험을 할 수 있는 모의투자 애플리케이션입니다.🤗
           </div>
         </div>
       </div>
@@ -34,11 +34,11 @@ export const PokeXDigi = () => {
       {/* 팀명, 진행 기간, 개발환경 */}
       <div className={`${styles.projectText}`}>
         <div>팀 명</div>
-        <div>NewDevs (New Developers)</div>
+        <div>OB</div>
       </div>
       <div className={`${styles.projectText}`}>
         <div>진행 기간</div>
-        <div>2023년 03월 22일 ~ 2023년 05월 11일</div>
+        <div>2023년 05월 15일 ~ 2023년 06월 23일</div>
       </div>
 
       {/* 개발환경부분 보류 */}
@@ -49,10 +49,7 @@ export const PokeXDigi = () => {
 
       <div className={`${styles.projectPlayer}`}>
         <div>시연 영상</div>
-        <ReactPlayer
-          url="https://youtu.be/RIYA3-1zyi8?si=uE_FdHR22-lF1z5-"
-          className={styles.projectPlay}
-        />
+        <ReactPlayer url="https://youtu.be/5CzOYe78M_g" className={styles.projectPlay} />
       </div>
     </div>
   );
