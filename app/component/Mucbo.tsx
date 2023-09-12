@@ -12,7 +12,7 @@ export const Mucbo = () => {
       <div className={`${styles.flexRowCenter} ${styles.projectInfoBox}`}>
         <Image src={mucbo} alt="jamstock" width={200} height={200} />
         <div className={`${styles.projectInfo}`}>
-          <p className={`${styles.projectName}`}>JamStock</p>
+          <p className={`${styles.projectName}`}>먹보의 하루</p>
           <Link href="https://github.com/HaekyungS/KDT-2-Project-B-1">
             <Image
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
