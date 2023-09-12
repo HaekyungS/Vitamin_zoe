@@ -24,7 +24,7 @@ export default function Page() {
       </div>
 
       {/* 신상정보 */}
-      <div className={`${styles.bottom} ${styles.flexColumnCenter}`}>
+      <div className={`${styles.bottomInfo} ${styles.flexColumnCenter}`}>
         <h2>비타민 "성해경" 신상 정보</h2>
 
         {/* 사진, 이름, 출시일 */}
