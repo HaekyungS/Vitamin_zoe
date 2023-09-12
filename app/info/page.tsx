@@ -6,6 +6,8 @@ import photo from "../../Utils/230910.jpg";
 import gmail from "../../Utils/gmail.png";
 import notion from "../../Utils/notion.png";
 import React from "react";
+import { LangIcon } from "../component/LangIcon";
+import { Tools } from "../component/Tools";
 
 export default function Page() {
   return (
@@ -68,141 +70,10 @@ export default function Page() {
         {/* 사용가능 언어 및 업무툴 */}
         <div className={`${styles.infoLang} ${styles.flexRowCenter}`}>
           {/* 사용 가능 언어 */}
-          <div className={styles.lang}>
-            <h3 className={styles.langTitle}>사용 가능 언어</h3>
-            <div className={styles.langBox}>
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                alt="HTML5"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                alt="CSS"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                alt="Javascript"
-                width={50}
-                height={50}
-                className={styles.marginLeft}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                alt="Typescript"
-                width={50}
-                height={50}
-              />
-              <br />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                alt="Python"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
-                alt="NodeJS"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-                alt="NextJS"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                alt="express"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg"
-                alt="webpack"
-                width={50}
-                height={50}
-              />
-              <br />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                alt="React"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
-                alt="Android"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
-                alt="Socket.io"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                alt="MySQL"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
-                alt="AWS"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                alt="GIT"
-                width={50}
-                height={50}
-              />
-            </div>
-          </div>
+          <LangIcon />
 
           {/* 업무 툴 */}
-          <div className={styles.lang}>
-            <h3 className={styles.langTitle}>사용 가능 업무툴</h3>
-            <div className={`${styles.langBox} ${styles.flexRowCenter}`}>
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                alt="Github"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-                alt="VSCode"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
-                alt="Android Studio"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                alt="Figma"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg"
-                alt="Slack"
-                width={50}
-                height={50}
-              />
-            </div>
-          </div>
+          <Tools />
         </div>
 
         {/* 특징부분 */}
