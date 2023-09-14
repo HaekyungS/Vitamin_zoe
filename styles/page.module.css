@@ -269,6 +269,15 @@
   height: auto;
 }
 
+.infoProject {
+  font-size: 20px;
+  color: black;
+}
+
+.infoProject:hover {
+  color: rgb(43, 180, 235);
+}
+
 /* 더 알고싶다면 */
 .infoMore {
   width: 50%;
@@ -290,6 +299,10 @@
   width: 85%;
   height: 80px;
   font-size: 25px;
+}
+
+.projectTap:hover {
+  cursor: pointer;
 }
 
 .projectBox {

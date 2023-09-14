@@ -166,7 +166,7 @@ export default function Page() {
 
         <div>
           <h3>투약 프로젝트가 궁금하다면👩‍🔬</h3>
-          <Link href={"/project"} className={styles.link}>
+          <Link href={"/project"} className={`${styles.infoProject} ${styles.link}`}>
             투약 결과 보러가기
           </Link>
         </div>
@@ -194,7 +194,7 @@ export default function Page() {
           </div>
           <div>
             <h3>투약하고 싶다면 자유롭게 메일로 연락주세요📨</h3>
-            <div className={styles.font18}>
+            <div className={styles.infoProject}>
               {imageUrl.length > 0 && (
                 <Image src={imageUrl[1]} alt="Notion" width={15} height={15} />
               )}{" "}
