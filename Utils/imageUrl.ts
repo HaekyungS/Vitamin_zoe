@@ -5,7 +5,6 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export const firebaseImage = async (filename: string) => {
-  console.log(process.env);
   const firebaseConfig = {
     apiKey: process.env.NEXT_PUBLIC_apiKey,
     authDomain: process.env.NEXT_PUBLIC_authDomain,
