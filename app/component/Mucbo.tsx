@@ -1,16 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "../../styles/page.module.css";
-import mucbo from "../../Utils/mucbo.png";
 import ReactPlayer from "react-player";
 import Link from "next/link";
+import { firebaseImage } from "../../Utils/imageUrl";
 
 export const Mucbo = () => {
+  const [imageUrl, setImageUrl] = useState("");
+
+  useEffect(() => {
+    const fetchImageUrl = async () => {
+      try {
+        const url = firebaseImage("mucbo.png");
+        setImageUrl(await url);
+      } catch (error) {
+        console.error("imageError:", error);
+      }
+    };
+
+    fetchImageUrl();
+  }, []);
+
   return (
     <div className={`${styles.projectBox} ${styles.flexColumnCenter}`}>
       {/* 프로젝트 소개 */}
       <div className={`${styles.flexRowCenter} ${styles.projectInfoBox}`}>
-        <Image src={mucbo} alt="먹보의 하루" width={200} height={200} />
+        {imageUrl.length > 0 && <Image src={imageUrl} alt="먹보의 하루" width={200} height={200} />}
         <div className={`${styles.projectInfo}`}>
           <p className={`${styles.projectName}`}>먹보의 하루</p>
           <Link href="https://github.com/HaekyungS/KDT-2-Project-B-1">

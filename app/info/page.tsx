@@ -2,15 +2,32 @@
 import Link from "next/link";
 import styles from "../../styles/page.module.css";
 import Image from "next/image";
-import photo from "../../Utils/230914.jpg";
-import gmail from "../../Utils/gmail.png";
-import notion from "../../Utils/notion.png";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { LangIcon } from "../component/LangIcon";
 import { Tools } from "../component/Tools";
 import { MiniCapsule } from "../component/MiniCapsule";
+import { firebaseImage } from "../../Utils/imageUrl";
 
 export default function Page() {
+  const [imageUrl, setImageUrl] = useState([]);
+
+  useEffect(() => {
+    const fetchImageUrl = async () => {
+      try {
+        const url = [
+          await firebaseImage("230914.jpg"),
+          await firebaseImage("gmail.png"),
+          await firebaseImage("notion.png"),
+        ];
+        setImageUrl(url);
+      } catch (error) {
+        console.error("imageError:", error);
+      }
+    };
+
+    fetchImageUrl();
+  }, []);
+
   return (
     <>
       {/* 상단에 작은 캡슐모양 */}
@@ -33,12 +50,16 @@ export default function Page() {
           </div>
           <div className={`${styles.infoTableRow} ${styles.flexRowCenter}`}>
             <div className={`${styles.infoTableRowTwo}`}>
-              <Image
-                src={photo}
-                alt="zoe's picture"
-                draggable={false}
-                className={styles.infoTableImg}
-              />
+              {imageUrl.length > 0 && (
+                <Image
+                  src={imageUrl[0]}
+                  alt="zoe's picture"
+                  draggable={false}
+                  width={100}
+                  height={100}
+                  className={styles.infoTableImg}
+                />
+              )}
             </div>
             <div className={styles.infoTableRowTwo}>
               성해경
@@ -155,24 +176,29 @@ export default function Page() {
           <h2>이 약품에 대해 더 알고싶다면🧐</h2>
           <div className={styles.infoMore}>
             <Link href="https://github.com/HaekyungS" target="_blank">
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                alt="Github"
-                width={50}
-                height={50}
-              />
+              {imageUrl.length > 0 && (
+                <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  alt="Github"
+                  width={50}
+                  height={50}
+                />
+              )}
             </Link>
             <Link
               href="https://foul-rice-892.notion.site/Project-69425c2d126f4af28d8763c1b5a5d085?pvs=4"
               target="_blank"
             >
-              <Image src={notion} alt="Notion" width={50} height={50} />
+              <Image src={imageUrl[2]} alt="Notion" width={50} height={50} />
             </Link>
           </div>
           <div>
             <h3>투약하고 싶다면 자유롭게 메일로 연락주세요📨</h3>
             <div className={styles.font18}>
-              <Image src={gmail} alt="Notion" width={15} height={15} /> haekyungs95@gmail.com
+              {imageUrl.length > 0 && (
+                <Image src={imageUrl[1]} alt="Notion" width={15} height={15} />
+              )}{" "}
+              haekyungs95@gmail.com
             </div>
           </div>
         </div>
