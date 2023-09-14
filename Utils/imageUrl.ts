@@ -1,19 +1,19 @@
 import { initializeApp } from "firebase/app";
 import { getDownloadURL, getStorage, ref } from "firebase/storage";
-import { useEffect, useState } from "react";
+import dotenv from "dotenv";
 
-// TODO: Replace the following with your app's Firebase project configuration
-// See: https://firebase.google.com/docs/web/learn-more#config-object
+dotenv.config();
 
 export const firebaseImage = async (filename: string) => {
+  console.log(process.env);
   const firebaseConfig = {
-    apiKey: "AIzaSyA7fnU19BqX_PDok-XumExKb2K8-rM_jwI",
-    authDomain: "vitaminzoe-37472.firebaseapp.com",
-    projectId: "vitaminzoe-37472",
-    storageBucket: "vitaminzoe-37472.appspot.com",
-    messagingSenderId: "149141516379",
-    appId: "1:149141516379:web:a6d486c16fdae5fede0f7e",
-    measurementId: "G-D40KVD8CVT",
+    apiKey: process.env.NEXT_PUBLIC_apiKey,
+    authDomain: process.env.NEXT_PUBLIC_authDomain,
+    projectId: process.env.NEXT_PUBLIC_projectId,
+    storageBucket: process.env.NEXT_PUBLIC_storageBucket,
+    messagingSenderId: process.env.NEXT_PUBLIC_messagingSenderId,
+    appId: process.env.NEXT_PUBLIC_appId,
+    measurementId: process.env.NEXT_PUBLIC_measurementId,
   };
 
   // Initialize Firebase
