@@ -11,7 +11,7 @@ export const PokeXDigi = () => {
   useEffect(() => {
     const fetchImageUrl = async () => {
       try {
-        const url = firebaseImage("jamstock.png");
+        const url = firebaseImage("pokeXdigi.png");
         setImageUrl(await url);
       } catch (error) {
         console.error("imageError:", error);
