@@ -25,7 +25,7 @@ export const Mucbo = () => {
     <div className={`${styles.projectBox} ${styles.flexColumnCenter}`}>
       {/* 프로젝트 소개 */}
       <div className={`${styles.flexRowCenter} ${styles.projectInfoBox}`}>
-        {imageUrl.length > 0 && <Image src={imageUrl} alt="먹보의 하루" width={200} height={200} />}
+        {imageUrl.length > 0 && <img src={imageUrl} alt="먹보의 하루" width={200} height={200} />}
         <div className={`${styles.projectInfo}`}>
           <p className={`${styles.projectName}`}>먹보의 하루</p>
           <Link href="https://github.com/HaekyungS/KDT-2-Project-B-1">

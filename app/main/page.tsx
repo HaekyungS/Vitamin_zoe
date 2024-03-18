@@ -35,7 +35,7 @@ export default function Page() {
           <h3>복용 한 번 해보실래요?💊</h3>
           <div className={`${styles.flexRowCenter} ${styles.mainsub}`}>
             {imageUrl.length > 0 && (
-              <Image
+              <img
                 src={imageUrl}
                 width={170}
                 height={200}

@@ -51,7 +51,7 @@ export default function Page() {
           <div className={`${styles.infoTableRow} ${styles.flexRowCenter}`}>
             <div className={`${styles.infoTableRowTwo}`}>
               {imageUrl.length > 0 && (
-                <Image
+                <img
                   src={imageUrl[0]}
                   alt="zoe's picture"
                   draggable={false}
@@ -99,78 +99,6 @@ export default function Page() {
           </div>
         </div>
 
-        {/* 특징부분 */}
-        {/* 특징적 이미지들을 찾아서 옆에 넣고 양쪽 교차 방식으로. */}
-        <div className={`${styles.infoSpec} ${styles.marginTwo}`}>
-          <h2>약품 특이사항😶‍🌫️</h2>
-          <ul>
-            <li className={`${styles.textLeft}`}>
-              <span>카멜레온을 뺨치는 빠른 적응력</span>
-              <br />
-              일에 대한 업무 파악은 물론이고
-              <br />
-              장소, 사람에 대해서도 적응이 빠릅니다.
-              <br />
-              그로인해 잠깐 알았는데도 장기간 알고 지낸 느낌이 듭니다.
-            </li>
-            <li className={styles.textRight}>
-              <span>민달팽이같은 유연함</span>
-              <br />
-              사람들과 협업함에 있어 의견 수용 등에 대하여
-              <br />
-              굉장히 유연한 사고력을 가지고 있어
-              <br />
-              대화를 통한 원활한 의견 소통에 용이합니다.
-            </li>
-            <li className={styles.textLeft}>
-              <span>늑대같은 책임감</span>
-              <br />한 번 내 손에 들어온 일이면 일이 마무리된 후까지도
-              <br />
-              진행 사항을 확인하며, 끝난 뒤까지 책임집니다.
-              <br />제 손을 떠났다고 제 것이 아닌 게 아니니까요.
-            </li>
-          </ul>
-        </div>
-
-        {/* 부작용 부분 */}
-        <div className={`${styles.infoErr} ${styles.marginTwo}`}>
-          <h2>부작용🤫</h2>
-          <p>
-            다음과 같은 부작용이 있을 수 있습니다.
-            <br />
-            투약으로 인해 발생하는 부작용에 대해서는 책임지지 않습니다.
-          </p>
-          <ol className={styles.listTypeNone}>
-            <li className={styles.textLeft}>
-              <span>"든 자리는 몰라도 난 자리는 안다"</span> 를 체감 가능하십니다.
-              <br />
-              고작 사람 하나 없는데
-              <br />
-              허전하고 조용하여 심심함을 느낄 수 있습니다.
-            </li>
-            <li className={styles.textRight}>
-              특이사항처럼 장기간 알고 지낸 느낌때문에 자꾸 생각납니다.
-              <br />
-              본 부작용은,
-              <br />
-              전직장 팀장님 등 동료분들, 여행 중 알게된 동행자, 친구 등
-              <br />
-              다양한 사례로 증명된 부작용입니다.
-              <br />
-              잠깐 같이 있었는데도 친근하고
-              <br />
-              오랜 기간 알고지낸 느낌 뿐 아니라 자꾸 생각난다 합니다.
-            </li>
-          </ol>
-        </div>
-
-        <div>
-          <h3>투약 프로젝트가 궁금하다면👩‍🔬</h3>
-          <Link href={"/project"} className={`${styles.infoProject} ${styles.link}`}>
-            투약 결과 보러가기
-          </Link>
-        </div>
-
         {/* 컨택포인트 */}
         <div className={`${styles.infoContact}`}>
           <h2>이 약품에 대해 더 알고싶다면🧐</h2>
@@ -189,15 +117,13 @@ export default function Page() {
               href="https://foul-rice-892.notion.site/Project-69425c2d126f4af28d8763c1b5a5d085?pvs=4"
               target="_blank"
             >
-              <Image src={imageUrl[2]} alt="Notion" width={50} height={50} />
+              <img src={imageUrl[2]} alt="Notion" width={50} height={50} />
             </Link>
           </div>
           <div>
             <h3>투약하고 싶다면 자유롭게 메일로 연락주세요📨</h3>
             <div className={styles.infoProject}>
-              {imageUrl.length > 0 && (
-                <Image src={imageUrl[1]} alt="Notion" width={15} height={15} />
-              )}{" "}
+              {imageUrl.length > 0 && <img src={imageUrl[1]} alt="Notion" width={15} height={15} />}{" "}
               haekyungs95@gmail.com
             </div>
           </div>

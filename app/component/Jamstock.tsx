@@ -25,7 +25,7 @@ export const JamStock = () => {
     <div className={`${styles.projectBox} ${styles.flexColumnCenter}`}>
       {/* 프로젝트 소개 */}
       <div className={`${styles.flexRowCenter} ${styles.projectInfoBox}`}>
-        {imageUrl.length > 0 && <Image src={imageUrl} alt="jamstock" width={200} height={200} />}
+        {imageUrl.length > 0 && <img src={imageUrl} alt="jamstock" width={200} height={200} />}
         <div className={`${styles.projectInfo}`}>
           <p className={`${styles.projectName}`}>JamStock</p>
           <Link href="https://github.com/JamStock/JamStock.git">
