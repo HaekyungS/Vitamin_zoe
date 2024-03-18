@@ -88,7 +88,7 @@ export const LangIcon = () => {
           height={50}
         />
         <Image
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
           alt="AWS"
           width={50}
           height={50}
