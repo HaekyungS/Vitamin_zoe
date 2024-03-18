@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import styles from "../../styles/page.module.css";
 import Link from "next/link";
-import Image from "next/image";
 import { MiniCapsule } from "../component/MiniCapsule";
 import { firebaseImage } from "../../Utils/imageUrl";
 

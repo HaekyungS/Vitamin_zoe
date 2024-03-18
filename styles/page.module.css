@@ -29,6 +29,7 @@
 
 .link {
   text-decoration-line: none;
+  color: black;
 }
 
 .marginLeft {
@@ -101,6 +102,7 @@
   transform: rotate(30deg);
   background-color: #3d9df6;
   margin: 0;
+  box-shadow: 3px 3px #333;
 }
 
 .whiteSmallCap {
@@ -110,6 +112,7 @@
   transform: rotate(-30deg);
   background-color: #fff;
   margin: 0;
+  box-shadow: 3px 3px #333;
 }
 
 .wh80 {
@@ -128,7 +131,7 @@
 /* 메인페이지 */
 .bottomMain {
   width: 70%;
-  height: 50%;
+  height: 55%;
   background-color: #fff;
   padding: 10px;
   box-shadow: 5px 5px #333;
@@ -277,6 +280,7 @@
 
 .projectTap:hover {
   cursor: pointer;
+  /* color: #3d9df6; */
 }
 
 .projectBox {
@@ -292,7 +296,7 @@
 }
 
 .projectInfo {
-  width: 60%;
+  width: 55%;
   height: 100%;
   margin: 0;
 }

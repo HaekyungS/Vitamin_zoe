@@ -1,10 +1,10 @@
 import "../styles/global.css";
-import { poorS } from "../styles/font";
+import { orbit } from "../styles/font";
 import { Head } from "./head";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" className={poorS.className}>
+    <html lang="ko" className={orbit.className}>
       <Head />
       <body>
         {children}
