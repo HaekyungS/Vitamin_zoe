@@ -11,5 +11,12 @@
 ## 제작 기록 정리
 
 - 개인 노션에 정리 중이므로 아래 링크 참고~.~
-  
-    https://foul-rice-892.notion.site/4fca52d63dc645d0baecc8938dd95add?pvs=4
+
+  https://foul-rice-892.notion.site/4fca52d63dc645d0baecc8938dd95add?pvs=4
+
+## 업데이트 기록
+
+- 240318 업데이트
+  - 전체적인 폰트 종류 변경
+    기존 Poor -> Orbit
+  - 알약 및 메인 부분 box-shadow 추가를 통한 입체감 조성
