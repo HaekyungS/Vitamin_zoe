@@ -10,8 +10,6 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #d2f7ffab;
-  /* 파이어 폭스 */
-  scrollbar-width: none;
 }
 
 /* 크롬, 사파리, 엣지, 오페라  */
@@ -33,5 +31,6 @@ li {
 }
 
 footer {
+  width: 100%;
   margin-top: 10px;
 }
