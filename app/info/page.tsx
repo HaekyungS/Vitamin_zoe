@@ -85,8 +85,6 @@ export default function Page() {
                 <img src={imageUrl[2]} alt="Notion" width={50} height={50} />
               </Link>
             </div>
-
-            {/* 클릭 시, 수료증 사진이 나오도록 클릭 버튼 만들기 */}
           </div>
         </div>
 
@@ -123,13 +121,14 @@ export default function Page() {
 
         {/* 컨택포인트 */}
         <div className={`${styles.infoContact}`}>
-          <div>
-            <h3>투약하고 싶다면 자유롭게 메일로 연락주세요📨</h3>
-            <div className={styles.infoProject}>
-              {imageUrl.length > 0 && <img src={imageUrl[1]} alt="Notion" width={15} height={15} />}{" "}
-              haekyungs95@gmail.com
-            </div>
-          </div>
+          <h3>컨텍은 아래 메일로 연락주세요📨</h3>
+          <Link
+            href="mailto:haekyungs95@gmail.com"
+            className={`${styles.infoProject} ${styles.link}`}
+          >
+            {imageUrl.length > 0 && <img src={imageUrl[1]} alt="Gmail" width={15} height={15} />}{" "}
+            haekyungs95@gmail.com
+          </Link>
         </div>
       </div>
     </>
