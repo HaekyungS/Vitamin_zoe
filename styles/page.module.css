@@ -125,7 +125,7 @@
 /* 각 페이지 상단 알약 부분 */
 .topBox {
   width: 100%;
-  height: 20%;
+  height: 15%;
 }
 
 /* 특정 페이지들의 세부 CSS */
@@ -176,7 +176,6 @@
   width: 70%;
   height: auto;
   background-color: #fff;
-  padding: 20px;
   box-shadow: 3px 3px #333;
 }
 
@@ -236,6 +235,12 @@
   width: 100%;
   height: 10%;
   margin-bottom: 10px;
+}
+
+.infoContact {
+  width: 85%;
+  height: 40%;
+  padding: 15px;
 }
 
 /* 신상 내 언어부분 */
