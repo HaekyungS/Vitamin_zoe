@@ -8,7 +8,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <Head />
       <body>
         {children}
-        <footer>CopyrightⓒPowered by 성해경 All Right Reserved</footer>
+        <footer>CopyrightⓒPowered by HaekyungSeong All Right Reserved</footer>
       </body>
     </html>
   );
