@@ -56,13 +56,13 @@ export const LangIcon = () => {
           width={50}
           height={50}
         />
+        <br />
         <Image
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg"
           alt="webpack"
           width={50}
           height={50}
         />
-        <br />
         <Image
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
           alt="React"
@@ -81,6 +81,7 @@ export const LangIcon = () => {
           width={50}
           height={50}
         />
+        <br />
         <Image
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
           alt="MySQL"
