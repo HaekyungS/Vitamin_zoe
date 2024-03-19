@@ -46,7 +46,7 @@ export default function Page() {
               <br />
               (영문명)
             </div>
-            <div className={`${styles.infoTableRowOne}`}>출시년월</div>
+            <div className={`${styles.infoTableRowOne}`}></div>
           </div>
           <div className={`${styles.infoTableRow} ${styles.flexRowCenter}`}>
             <div className={`${styles.infoTableRowTwo}`}>
@@ -66,7 +66,25 @@ export default function Page() {
               <br />
               (Haekyung Seong)
             </div>
-            <div className={`${styles.infoTableRowTwo}`}>2023년 07월 18일</div>
+            <div className={`${styles.infoTableRowTwo}`}>
+              <Link href="https://github.com/HaekyungS" target="_blank">
+                {imageUrl.length > 0 && (
+                  <Image
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="Github"
+                    width={50}
+                    height={50}
+                  />
+                )}
+              </Link>
+
+              <Link
+                href="https://zoehae.notion.site/Project-69425c2d126f4af28d8763c1b5a5d085?pvs=4"
+                target="_blank"
+              >
+                <img src={imageUrl[2]} alt="Notion" width={50} height={50} />
+              </Link>
+            </div>
 
             {/* 클릭 시, 수료증 사진이 나오도록 클릭 버튼 만들기 */}
           </div>
@@ -75,7 +93,11 @@ export default function Page() {
         {/* 간단소개 */}
         <h2>약품 인사말🖐️</h2>
         <div className={styles.infoTitle}>
-          비타민처럼 같이 일하는 사람에게도 제가 만드는 것들에도 힘이 되고 싶은
+          비타민처럼 같이 일하는 사람에게도,
+          <br />
+          제가 만드는 애플리케이션 유저들에도,
+          <br />
+          힘이 되고 싶은
           <br />
           <span>개발자 성해경</span>입니다🤗 <br />
           점점 더 생활 속 다양해지는 자동화 시대에서 나이불문하고
@@ -101,25 +123,6 @@ export default function Page() {
 
         {/* 컨택포인트 */}
         <div className={`${styles.infoContact}`}>
-          <h2>이 약품에 대해 더 알고싶다면🧐</h2>
-          <div className={styles.infoMore}>
-            <Link href="https://github.com/HaekyungS" target="_blank">
-              {imageUrl.length > 0 && (
-                <Image
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                  alt="Github"
-                  width={50}
-                  height={50}
-                />
-              )}
-            </Link>
-            <Link
-              href="https://foul-rice-892.notion.site/Project-69425c2d126f4af28d8763c1b5a5d085?pvs=4"
-              target="_blank"
-            >
-              <img src={imageUrl[2]} alt="Notion" width={50} height={50} />
-            </Link>
-          </div>
           <div>
             <h3>투약하고 싶다면 자유롭게 메일로 연락주세요📨</h3>
             <div className={styles.infoProject}>
