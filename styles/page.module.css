@@ -177,6 +177,7 @@
   height: auto;
   background-color: #fff;
   padding: 20px;
+  box-shadow: 3px 3px #333;
 }
 
 /* 사진, 이름, 출시년월 */
