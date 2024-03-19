@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { JamStock } from "../component/Jamstock";
 import { Mucbo } from "../component/Mucbo";
 import { MiniCapsule } from "../component/MiniCapsule";
+import { HbdRyu } from "../component/HbdRyu";
 
 export default function Page() {
   const [project, setProject] = useState("PokeXDigi");
@@ -18,6 +19,8 @@ export default function Page() {
       return <JamStock />;
     } else if (project === "Mucbo") {
       return <Mucbo />;
+    } else if (project === "HbdRyu") {
+      return <HbdRyu />;
     } else {
       return <div>뭔데 이건</div>;
     }
@@ -51,6 +54,13 @@ export default function Page() {
             }}
           >
             먹보의 하루
+          </div>
+          <div
+            onClick={() => {
+              setProject("HbdRyu");
+            }}
+          >
+            류 모의고사
           </div>
         </div>
         {/* 프로젝트 내용부분 */}
