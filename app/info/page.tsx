@@ -107,9 +107,14 @@ export default function Page() {
           재미있는 애플리케이션을 개발하고자 공부 중에 있습니다.
         </div>
 
+        {/* 프로젝트 페이지로 이동 */}
+        <Link className={`${styles.link} ${styles.font21}`} href="/project">
+          💊프로젝트 보러가기👩‍💻
+        </Link>
+
         {/* 사용가능 언어 및 업무툴 */}
         <div className={`${styles.infoLang} ${styles.flexcolumnCenter}`}>
-          <h2 className={styles.infoLangTitle}>이 약품이 사용가능한 언어 및 업무툴👩‍💻</h2>
+          <h2 className={styles.infoLangTitle}>사용 가능한 언어 및 업무툴👩‍💻</h2>
           <div className={`${styles.flexRowCenter}`}>
             {/* 사용 가능 언어 */}
             <LangIcon />
