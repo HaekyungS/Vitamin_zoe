@@ -32,6 +32,10 @@
   color: black;
 }
 
+.link:hover {
+  color: #3d9df6;
+}
+
 .marginLeft {
   margin-left: 20px;
 }
@@ -63,6 +67,10 @@
 
 .font18 {
   font-size: 18px;
+}
+
+.font21 {
+  font-size: 21px;
 }
 
 /* 알약캡슐 */
@@ -284,7 +292,15 @@
 
 .projectTap:hover {
   cursor: pointer;
-  /* color: #3d9df6; */
+}
+
+.projectTap > * {
+  margin: 3px;
+  /* box-shadow: 2px 2px #333; */
+}
+
+.projectTap > *:hover {
+  color: #3d9df6;
 }
 
 .projectBox {
@@ -292,6 +308,7 @@
   height: auto;
   background-color: #fff;
   padding: 20px;
+  box-shadow: 3px 3px #333;
 }
 
 .projectInfoBox {
