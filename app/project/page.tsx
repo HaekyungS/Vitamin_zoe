@@ -35,6 +35,7 @@ export default function Page() {
       <div className={`${styles.bottomProject} ${styles.flexColumnCenter}`}>
         <div className={`${styles.flexRowSAround} ${styles.projectTap}`}>
           <div
+            className={project === "PokeXDigi" ? `${styles.clickTap}` : ""}
             onClick={() => {
               setProject("PokeXDigi");
             }}
@@ -42,6 +43,7 @@ export default function Page() {
             POKE X DIGI
           </div>
           <div
+            className={project === "JamStock" ? `${styles.clickTap}` : ""}
             onClick={() => {
               setProject("JamStock");
             }}
@@ -49,6 +51,7 @@ export default function Page() {
             JamStock
           </div>
           <div
+            className={project === "Mucbo" ? `${styles.clickTap}` : ""}
             onClick={() => {
               setProject("Mucbo");
             }}
@@ -56,6 +59,7 @@ export default function Page() {
             먹보의 하루
           </div>
           <div
+            className={project === "HbdRyu" ? `${styles.clickTap}` : ""}
             onClick={() => {
               setProject("HbdRyu");
             }}

@@ -73,6 +73,11 @@
   font-size: 21px;
 }
 
+.clickTap {
+  color: #3d9df6;
+  font-weight: bold;
+}
+
 /* 알약캡슐 */
 .containerFull {
   width: 927px;
