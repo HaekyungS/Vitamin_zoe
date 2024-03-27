@@ -56,12 +56,6 @@ export const JamStock = () => {
         <div>2023년 05월 15일 ~ 2023년 06월 23일</div>
       </div>
 
-      {/* 개발환경부분 보류 */}
-      {/* <div className={`${styles.projectEnv}`}>
-        <div>개발 환경</div>
-        <Image src={pokeXdigi_env} alt="POKE X DIGI Develop's env" width={400} height={400} />
-      </div> */}
-
       <div className={`${styles.projectPlayer}`}>
         <div>시연 영상</div>
         <ReactPlayer url="https://youtu.be/5CzOYe78M_g" className={styles.projectPlay} />
