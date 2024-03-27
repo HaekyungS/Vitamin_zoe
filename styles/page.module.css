@@ -80,33 +80,25 @@
 
 /* 알약캡슐 */
 .containerFull {
-  width: 927px;
-  height: 945px;
+  width: 15%;
+  height: 60%;
   position: relative;
+  transform: rotate(30deg);
 }
 
 .blueCap {
-  width: 347.188px;
-  height: 378px;
+  width: 100%;
+  height: 100%;
   border-radius: 50% 50% 0% 0%;
   background-color: #3d9df6;
-  margin-left: 45%;
-  position: absolute;
-  transform-origin: center top;
-  transform: rotate(30deg); /* 왼쪽으로 이동하고 회전 */
-  top: 10%;
   box-shadow: 3px 0px #333;
 }
 
 .whiteCap {
-  width: 347.188px;
-  height: 378px;
+  width: 100%;
+  height: 100%;
   border-radius: 0% 0% 50% 50%;
   background-color: #fff;
-  position: absolute;
-  transform-origin: center bottom; /* 회전 중심 설정 */
-  transform: translateX(-50%) rotate(30deg); /* 왼쪽으로 이동하고 회전 */
-  bottom: 17%;
   box-shadow: 3px 3px #333;
 }
 
@@ -360,4 +352,34 @@
 .projectPlay {
   width: 80%;
   height: 30%;
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .containerFull {
+    width: 20%;
+  }
+}
+
+@media (min-width: 710px) and (max-width: 999px) {
+  .containerFull {
+    width: 30%;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 709px) {
+  .containerFull {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .containerFull {
+    width: 45%;
+  }
+}
+
+@media (min-width: 677px) and (max-width: 935px) {
+  .projectTap {
+    font-size: 22px;
+  }
 }
